@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vew-0O-Xsy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="7X8-Mc-UaT">
             <objects>
-                <viewController id="Vj2-Tt-FyI" sceneMemberID="viewController">
+                <viewController id="Vj2-Tt-FyI" customClass="HomeViewController" customModule="DYTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pyc-kt-JkU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BeO-K2-asp"/>
@@ -22,11 +25,11 @@
             </objects>
             <point key="canvasLocation" x="1175.2" y="-466.41679160419795"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="doQ-R5-swQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vew-0O-Xsy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="VSa-tK-qwo"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="btn_home_normal" selectedImage="btn_home_selected" id="VSa-tK-qwo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="epK-GN-vIT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -42,4 +45,8 @@
             <point key="canvasLocation" x="236" y="-466.41679160419795"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_home_selected" width="24" height="24"/>
+    </resources>
 </document>
