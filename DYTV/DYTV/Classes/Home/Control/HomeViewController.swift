@@ -10,23 +10,27 @@ import UIKit
 class HomeViewController: UIViewController {
 
     //懒加载属性
-    private lazy var pageTitleView : PageTitleView = {
+    private lazy var pageTitleView : PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: KScreenW, height: kTitleViewH)
         let titles:[String] = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
 //        titleView.backgroundColor = UIColor.lightGray
+        titleView.delegate = self
         return titleView
     }()
     
-    private lazy var pageContentView : PageContentView = {
+    private lazy var pageContentView : PageContentView = { [weak self] in
         let contentFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH+kTitleViewH, width: KScreenW, height: kContentViewH)
         var childVcs = [UIViewController]()
-        for index in 0...3{
+        childVcs.append(RecommandViewController())
+        for index in 0...2{
             let childVc = UIViewController()
             childVc.view.backgroundColor = UIColor(r: arc4random_uniform(255), g: arc4random_uniform(255), b: arc4random_uniform(255))
             childVcs.append(childVc)
         }
-        return PageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
+        let pageContentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
+        pageContentView.delegate = self
+        return pageContentView
     }()
     
     
@@ -64,5 +68,20 @@ extension HomeViewController{
         let searchItem = UIBarButtonItem(imageName: "btn_search", hightedImageName: "btn_search_clicked", imageWidth: 30,imageHeight: 30)
         let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", hightedImageName: "Image_scan_click", imageWidth: 30,imageHeight: 30)
         navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcodeItem]
+    }
+}
+
+//实现pageTitleViewDelegate
+extension HomeViewController : PageTitleViewDelegate{
+    func pageTitleView(pageTitleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentIndex(currentIndex: index)
+    }
+    
+}
+
+//实现pageContentViewDelegate
+extension HomeViewController : PageContentViewDelegate{
+    func changeScrollLinex(pageContentView: PageContentView, scrollLinex: CGFloat,sourceLinex: CGFloat) {
+        pageTitleView.changeScorllx(scrollx: scrollLinex,sourceLinex: sourceLinex)
     }
 }

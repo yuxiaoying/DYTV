@@ -16,6 +16,7 @@
 		8C32F1F620E4C88B00F15279 /* UIBarButtonItem_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32F1F520E4C88B00F15279 /* UIBarButtonItem_Extension.swift */; };
 		8C32F1FA20E513D000F15279 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32F1F920E513D000F15279 /* PageTitleView.swift */; };
 		8C32F1FC20E5159F00F15279 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32F1FB20E5159F00F15279 /* Common.swift */; };
+		8C428CF320EE021200B9CF82 /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C428CF220EE021200B9CF82 /* RecommandViewController.swift */; };
 		8CEDB6A920EA072500EDD87C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDB6A820EA072500EDD87C /* PageContentView.swift */; };
 		8CEDB6AB20EA138600EDD87C /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDB6AA20EA138600EDD87C /* UIColor_Extension.swift */; };
 		8CF9C78E20E4A7E40042294B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9C78D20E4A7E40042294B /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		8C32F1F520E4C88B00F15279 /* UIBarButtonItem_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem_Extension.swift; sourceTree = "<group>"; };
 		8C32F1F920E513D000F15279 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		8C32F1FB20E5159F00F15279 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8C428CF220EE021200B9CF82 /* RecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
 		8CEDB6A820EA072500EDD87C /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		8CEDB6AA20EA138600EDD87C /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		8CF9C78A20E4A7E40042294B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			children = (
 				8C32F1D520E4B19300F15279 /* Home.storyboard */,
 				8C32F1F220E4BF0600F15279 /* HomeViewController.swift */,
+				8C428CF220EE021200B9CF82 /* RecommandViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				8C32F1E220E4B73500F15279 /* MainViewControl.swift in Sources */,
 				8CEDB6A920EA072500EDD87C /* PageContentView.swift in Sources */,
 				8C32F1F620E4C88B00F15279 /* UIBarButtonItem_Extension.swift in Sources */,
+				8C428CF320EE021200B9CF82 /* RecommandViewController.swift in Sources */,
 				8CEDB6AB20EA138600EDD87C /* UIColor_Extension.swift in Sources */,
 				8CF9C78E20E4A7E40042294B /* AppDelegate.swift in Sources */,
 				8C32F1F320E4BF0600F15279 /* HomeViewController.swift in Sources */,
