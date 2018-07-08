@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4DB6C2DF3BC1EE95A4D135 /* Pods_DYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EBDA4756240665DC5D3E43 /* Pods_DYTV.framework */; };
 		8C32F1D720E4B19300F15279 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C32F1D520E4B19300F15279 /* Home.storyboard */; };
 		8C32F1DA20E4B1CE00F15279 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C32F1D820E4B1CE00F15279 /* Live.storyboard */; };
 		8C32F1DD20E4B22200F15279 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C32F1DB20E4B22200F15279 /* Follow.storyboard */; };
@@ -16,7 +17,15 @@
 		8C32F1F620E4C88B00F15279 /* UIBarButtonItem_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32F1F520E4C88B00F15279 /* UIBarButtonItem_Extension.swift */; };
 		8C32F1FA20E513D000F15279 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32F1F920E513D000F15279 /* PageTitleView.swift */; };
 		8C32F1FC20E5159F00F15279 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32F1FB20E5159F00F15279 /* Common.swift */; };
+		8C346B6620EF2F6D00C79242 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C346B6420EF2F6D00C79242 /* CollectionNormalCell.swift */; };
+		8C346B6720EF2F6D00C79242 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C346B6520EF2F6D00C79242 /* CollectionNormalCell.xib */; };
+		8C346B6A20EF417900C79242 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C346B6820EF417900C79242 /* CollectionPrettyCell.swift */; };
+		8C346B6B20EF417900C79242 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C346B6920EF417900C79242 /* CollectionPrettyCell.xib */; };
 		8C428CF320EE021200B9CF82 /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C428CF220EE021200B9CF82 /* RecommandViewController.swift */; };
+		8CC1295D20EEE84600412671 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC1295B20EEE84600412671 /* CollectionHeaderView.swift */; };
+		8CC1295E20EEE84600412671 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1295C20EEE84600412671 /* CollectionHeaderView.xib */; };
+		8CDA789420F2185C00FD838A /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA789320F2185C00FD838A /* NetworkTool.swift */; };
+		8CDA789720F218E900FD838A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA789620F218E900FD838A /* HomeViewModel.swift */; };
 		8CEDB6A920EA072500EDD87C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDB6A820EA072500EDD87C /* PageContentView.swift */; };
 		8CEDB6AB20EA138600EDD87C /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDB6AA20EA138600EDD87C /* UIColor_Extension.swift */; };
 		8CF9C78E20E4A7E40042294B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9C78D20E4A7E40042294B /* AppDelegate.swift */; };
@@ -27,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C603F12CF275E839CA45F2B /* Pods-DYTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.debug.xcconfig"; sourceTree = "<group>"; };
 		8C32F1D620E4B19300F15279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		8C32F1D920E4B1CE00F15279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		8C32F1DC20E4B22200F15279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
@@ -36,7 +46,15 @@
 		8C32F1F520E4C88B00F15279 /* UIBarButtonItem_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem_Extension.swift; sourceTree = "<group>"; };
 		8C32F1F920E513D000F15279 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		8C32F1FB20E5159F00F15279 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8C346B6420EF2F6D00C79242 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		8C346B6520EF2F6D00C79242 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		8C346B6820EF417900C79242 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		8C346B6920EF417900C79242 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		8C428CF220EE021200B9CF82 /* RecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
+		8CC1295B20EEE84600412671 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		8CC1295C20EEE84600412671 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		8CDA789320F2185C00FD838A /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		8CDA789620F218E900FD838A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8CEDB6A820EA072500EDD87C /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		8CEDB6AA20EA138600EDD87C /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		8CF9C78A20E4A7E40042294B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +64,8 @@
 		8CF9C79420E4A7E50042294B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF9C79720E4A7E50042294B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF9C79920E4A7E50042294B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56C7B045171C0B0D28BBB85 /* Pods-DYTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.release.xcconfig"; sourceTree = "<group>"; };
+		F7EBDA4756240665DC5D3E43 /* Pods_DYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4DB6C2DF3BC1EE95A4D135 /* Pods_DYTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +93,8 @@
 		8C32F1E420E4BDA500F15279 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8CC1295B20EEE84600412671 /* CollectionHeaderView.swift */,
+				8CC1295C20EEE84600412671 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +118,10 @@
 			children = (
 				8C32F1F920E513D000F15279 /* PageTitleView.swift */,
 				8CEDB6A820EA072500EDD87C /* PageContentView.swift */,
+				8C346B6420EF2F6D00C79242 /* CollectionNormalCell.swift */,
+				8C346B6520EF2F6D00C79242 /* CollectionNormalCell.xib */,
+				8C346B6820EF417900C79242 /* CollectionPrettyCell.swift */,
+				8C346B6920EF417900C79242 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +206,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		8CDA789520F2188D00FD838A /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA789620F218E900FD838A /* HomeViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		8CDF9C5D20E4AFE700AB15FE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +230,7 @@
 		8CDF9C5E20E4AFF200AB15FE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8CDA789520F2188D00FD838A /* viewModel */,
 				8C32F1E520E4BDAB00F15279 /* Model */,
 				8C32F1E420E4BDA500F15279 /* View */,
 				8C32F1E320E4BD9500F15279 /* Control */,
@@ -227,6 +263,7 @@
 		8CDF9C6120E4B00900AB15FE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8CDA789320F2185C00FD838A /* NetworkTool.swift */,
 				8C32F1F420E4C84300F15279 /* Extension */,
 				8C32F1FB20E5159F00F15279 /* Common.swift */,
 			);
@@ -260,6 +297,8 @@
 			children = (
 				8CF9C78C20E4A7E40042294B /* DYTV */,
 				8CF9C78B20E4A7E40042294B /* Products */,
+				BEF85FB1514AD4E4DDDF020F /* Pods */,
+				D53DD7A802680146EEA2258D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,6 +323,23 @@
 			path = DYTV;
 			sourceTree = "<group>";
 		};
+		BEF85FB1514AD4E4DDDF020F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C603F12CF275E839CA45F2B /* Pods-DYTV.debug.xcconfig */,
+				C56C7B045171C0B0D28BBB85 /* Pods-DYTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D53DD7A802680146EEA2258D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7EBDA4756240665DC5D3E43 /* Pods_DYTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CF9C79C20E4A7E50042294B /* Build configuration list for PBXNativeTarget "DYTV" */;
 			buildPhases = (
+				294F4CD14ACED0801AFECC7B /* [CP] Check Pods Manifest.lock */,
 				8CF9C78620E4A7E40042294B /* Sources */,
 				8CF9C78720E4A7E40042294B /* Frameworks */,
 				8CF9C78820E4A7E40042294B /* Resources */,
+				062B96E1F3A7FDFB1C97D6D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,10 +401,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF9C79820E4A7E50042294B /* LaunchScreen.storyboard in Resources */,
+				8CC1295E20EEE84600412671 /* CollectionHeaderView.xib in Resources */,
+				8C346B6720EF2F6D00C79242 /* CollectionNormalCell.xib in Resources */,
 				8CF9C79520E4A7E50042294B /* Assets.xcassets in Resources */,
 				8CF9C79320E4A7E40042294B /* Main.storyboard in Resources */,
 				8C32F1DA20E4B1CE00F15279 /* Live.storyboard in Resources */,
 				8C32F1D720E4B19300F15279 /* Home.storyboard in Resources */,
+				8C346B6B20EF417900C79242 /* CollectionPrettyCell.xib in Resources */,
 				8C32F1E020E4B25700F15279 /* Profile.storyboard in Resources */,
 				8C32F1DD20E4B22200F15279 /* Follow.storyboard in Resources */,
 			);
@@ -354,12 +415,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		062B96E1F3A7FDFB1C97D6D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		294F4CD14ACED0801AFECC7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CF9C78620E4A7E40042294B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8C32F1FA20E513D000F15279 /* PageTitleView.swift in Sources */,
+				8CC1295D20EEE84600412671 /* CollectionHeaderView.swift in Sources */,
+				8CDA789420F2185C00FD838A /* NetworkTool.swift in Sources */,
 				8CF9C79020E4A7E40042294B /* ViewController.swift in Sources */,
 				8C32F1E220E4B73500F15279 /* MainViewControl.swift in Sources */,
 				8CEDB6A920EA072500EDD87C /* PageContentView.swift in Sources */,
@@ -368,6 +470,9 @@
 				8CEDB6AB20EA138600EDD87C /* UIColor_Extension.swift in Sources */,
 				8CF9C78E20E4A7E40042294B /* AppDelegate.swift in Sources */,
 				8C32F1F320E4BF0600F15279 /* HomeViewController.swift in Sources */,
+				8C346B6A20EF417900C79242 /* CollectionPrettyCell.swift in Sources */,
+				8C346B6620EF2F6D00C79242 /* CollectionNormalCell.swift in Sources */,
+				8CDA789720F218E900FD838A /* HomeViewModel.swift in Sources */,
 				8C32F1FC20E5159F00F15279 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +647,7 @@
 		};
 		8CF9C79D20E4A7E50042294B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C603F12CF275E839CA45F2B /* Pods-DYTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -562,6 +668,7 @@
 		};
 		8CF9C79E20E4A7E50042294B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56C7B045171C0B0D28BBB85 /* Pods-DYTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
