@@ -22,10 +22,14 @@
 		8C346B6A20EF417900C79242 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C346B6820EF417900C79242 /* CollectionPrettyCell.swift */; };
 		8C346B6B20EF417900C79242 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C346B6920EF417900C79242 /* CollectionPrettyCell.xib */; };
 		8C428CF320EE021200B9CF82 /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C428CF220EE021200B9CF82 /* RecommandViewController.swift */; };
+		8C8BEFC320F49E5A001CF3C0 /* RoomGroupVo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BEFC220F49E5A001CF3C0 /* RoomGroupVo.swift */; };
+		8CAF396520F34770007CC555 /* RoomVo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF396420F34770007CC555 /* RoomVo.swift */; };
+		8CAF396B20F35CA8007CC555 /* ColumnVo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF396A20F35CA8007CC555 /* ColumnVo.swift */; };
+		8CAF396E20F35F49007CC555 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF396D20F35F49007CC555 /* MainViewModel.swift */; };
 		8CC1295D20EEE84600412671 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC1295B20EEE84600412671 /* CollectionHeaderView.swift */; };
 		8CC1295E20EEE84600412671 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1295C20EEE84600412671 /* CollectionHeaderView.xib */; };
 		8CDA789420F2185C00FD838A /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA789320F2185C00FD838A /* NetworkTool.swift */; };
-		8CDA789720F218E900FD838A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA789620F218E900FD838A /* HomeViewModel.swift */; };
+		8CDA789720F218E900FD838A /* RecommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA789620F218E900FD838A /* RecommandViewModel.swift */; };
 		8CEDB6A920EA072500EDD87C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDB6A820EA072500EDD87C /* PageContentView.swift */; };
 		8CEDB6AB20EA138600EDD87C /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDB6AA20EA138600EDD87C /* UIColor_Extension.swift */; };
 		8CF9C78E20E4A7E40042294B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9C78D20E4A7E40042294B /* AppDelegate.swift */; };
@@ -51,10 +55,14 @@
 		8C346B6820EF417900C79242 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		8C346B6920EF417900C79242 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		8C428CF220EE021200B9CF82 /* RecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
+		8C8BEFC220F49E5A001CF3C0 /* RoomGroupVo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomGroupVo.swift; sourceTree = "<group>"; };
+		8CAF396420F34770007CC555 /* RoomVo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomVo.swift; sourceTree = "<group>"; };
+		8CAF396A20F35CA8007CC555 /* ColumnVo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnVo.swift; sourceTree = "<group>"; };
+		8CAF396D20F35F49007CC555 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		8CC1295B20EEE84600412671 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		8CC1295C20EEE84600412671 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		8CDA789320F2185C00FD838A /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
-		8CDA789620F218E900FD838A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8CDA789620F218E900FD838A /* RecommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewModel.swift; sourceTree = "<group>"; };
 		8CEDB6A820EA072500EDD87C /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		8CEDB6AA20EA138600EDD87C /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		8CF9C78A20E4A7E40042294B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +110,8 @@
 		8C32F1E520E4BDAB00F15279 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CAF396420F34770007CC555 /* RoomVo.swift */,
+				8C8BEFC220F49E5A001CF3C0 /* RoomGroupVo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 		8C32F1E620E4BE0E00F15279 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CAF396A20F35CA8007CC555 /* ColumnVo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,10 +217,18 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		8CAF396C20F35F29007CC555 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CAF396D20F35F49007CC555 /* MainViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		8CDA789520F2188D00FD838A /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8CDA789620F218E900FD838A /* HomeViewModel.swift */,
+				8CDA789620F218E900FD838A /* RecommandViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -273,6 +292,7 @@
 		8CDF9C6220E4B01200AB15FE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8CAF396C20F35F29007CC555 /* viewModel */,
 				8C32F1E620E4BE0E00F15279 /* Model */,
 				8C32F1E720E4BE1E00F15279 /* View */,
 				8C32F1E820E4BE2300F15279 /* Control */,
@@ -424,10 +444,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,18 +486,22 @@
 				8C32F1FA20E513D000F15279 /* PageTitleView.swift in Sources */,
 				8CC1295D20EEE84600412671 /* CollectionHeaderView.swift in Sources */,
 				8CDA789420F2185C00FD838A /* NetworkTool.swift in Sources */,
+				8CAF396B20F35CA8007CC555 /* ColumnVo.swift in Sources */,
 				8CF9C79020E4A7E40042294B /* ViewController.swift in Sources */,
 				8C32F1E220E4B73500F15279 /* MainViewControl.swift in Sources */,
 				8CEDB6A920EA072500EDD87C /* PageContentView.swift in Sources */,
 				8C32F1F620E4C88B00F15279 /* UIBarButtonItem_Extension.swift in Sources */,
 				8C428CF320EE021200B9CF82 /* RecommandViewController.swift in Sources */,
 				8CEDB6AB20EA138600EDD87C /* UIColor_Extension.swift in Sources */,
+				8C8BEFC320F49E5A001CF3C0 /* RoomGroupVo.swift in Sources */,
+				8CAF396520F34770007CC555 /* RoomVo.swift in Sources */,
 				8CF9C78E20E4A7E40042294B /* AppDelegate.swift in Sources */,
 				8C32F1F320E4BF0600F15279 /* HomeViewController.swift in Sources */,
 				8C346B6A20EF417900C79242 /* CollectionPrettyCell.swift in Sources */,
 				8C346B6620EF2F6D00C79242 /* CollectionNormalCell.swift in Sources */,
-				8CDA789720F218E900FD838A /* HomeViewModel.swift in Sources */,
+				8CDA789720F218E900FD838A /* RecommandViewModel.swift in Sources */,
 				8C32F1FC20E5159F00F15279 /* Common.swift in Sources */,
+				8CAF396E20F35F49007CC555 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

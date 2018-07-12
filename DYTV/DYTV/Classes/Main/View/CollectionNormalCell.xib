@@ -43,9 +43,12 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IB1-gi-RKE">
-                        <rect key="frame" x="202" y="133" width="67" height="16"/>
+                        <rect key="frame" x="218" y="5" width="51" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="mRW-gu-gTC"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="6666在线" image="Image_online"/>
+                        <state key="normal" title="6666在线"/>
                     </button>
                 </subviews>
             </view>
@@ -55,25 +58,31 @@
                 <constraint firstAttribute="trailing" secondItem="xgo-K4-ZYq" secondAttribute="trailing" id="C8i-oP-wdh"/>
                 <constraint firstItem="iMy-Az-9yh" firstAttribute="leading" secondItem="xgo-K4-ZYq" secondAttribute="leading" constant="5" id="E6f-r5-afL"/>
                 <constraint firstItem="xgo-K4-ZYq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EMP-50-zo1"/>
-                <constraint firstItem="IB1-gi-RKE" firstAttribute="bottom" secondItem="xgo-K4-ZYq" secondAttribute="bottom" constant="-5" id="Frk-36-Pct"/>
                 <constraint firstItem="upf-Ia-1Nt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I12-Pb-S2J"/>
-                <constraint firstItem="IB1-gi-RKE" firstAttribute="trailing" secondItem="xgo-K4-ZYq" secondAttribute="trailing" constant="-5" id="JCe-gQ-AO7"/>
+                <constraint firstItem="IB1-gi-RKE" firstAttribute="trailing" secondItem="xgo-K4-ZYq" secondAttribute="trailing" constant="-5" id="M2q-rh-7P0"/>
                 <constraint firstItem="iMy-Az-9yh" firstAttribute="bottom" secondItem="xgo-K4-ZYq" secondAttribute="bottom" constant="-5" id="Rmz-Ti-Ww9"/>
                 <constraint firstItem="2q4-Kh-L4G" firstAttribute="centerY" secondItem="upf-Ia-1Nt" secondAttribute="centerY" id="YSg-oG-ZP9"/>
                 <constraint firstItem="2q4-Kh-L4G" firstAttribute="top" secondItem="xgo-K4-ZYq" secondAttribute="bottom" constant="5" id="bcU-yX-6Fx"/>
                 <constraint firstItem="xgo-K4-ZYq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dp1-Of-9NW"/>
                 <constraint firstAttribute="bottom" secondItem="upf-Ia-1Nt" secondAttribute="bottom" constant="10" id="gis-X1-zVS"/>
+                <constraint firstItem="IB1-gi-RKE" firstAttribute="top" secondItem="xgo-K4-ZYq" secondAttribute="top" constant="5" id="h5d-qE-gtP"/>
                 <constraint firstItem="xgo-K4-ZYq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pef-g1-I2c"/>
                 <constraint firstItem="2q4-Kh-L4G" firstAttribute="leading" secondItem="upf-Ia-1Nt" secondAttribute="trailing" constant="5" id="wQN-CK-3Ox"/>
                 <constraint firstItem="xgo-K4-ZYq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ybH-OO-U1M"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="274" height="183"/>
+            <connections>
+                <outlet property="liveIconImageView" destination="upf-Ia-1Nt" id="N4N-bL-BA3"/>
+                <outlet property="onlineNumBtn" destination="IB1-gi-RKE" id="wRd-uB-OcW"/>
+                <outlet property="srcImageView" destination="xgo-K4-ZYq" id="mRW-GN-QVp"/>
+                <outlet property="title2Label" destination="iMy-Az-9yh" id="jk3-3e-94g"/>
+                <outlet property="titleLabel" destination="2q4-Kh-L4G" id="myg-mJ-FXa"/>
+            </connections>
             <point key="canvasLocation" x="-103" y="-11.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Image_online" width="16" height="16"/>
         <image name="Img_default" width="172" height="103"/>
         <image name="home_live_cate_normal" width="14" height="14"/>
     </resources>

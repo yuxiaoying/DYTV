@@ -10,9 +10,16 @@ import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    //控件属性
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
     
+}
+
+extension CollectionHeaderView{
+    func reloadHeader(roomGroup:RoomGroupVo){
+        titleLabel.text = roomGroup.headerName
+        let iconName = roomGroup.headerIcon ?? "home_header_normal"
+        iconImageView.image = UIImage(named:iconName)
+    }
 }

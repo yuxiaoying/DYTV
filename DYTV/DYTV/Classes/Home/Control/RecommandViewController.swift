@@ -16,6 +16,7 @@ private let kNormalCellId = "kNormalCellId"
 private let kPrettyCellId = "kPrettyCellId"
 private let kHeaderViewId = "kHeaderViewId"
 class RecommandViewController: UIViewController {
+    private lazy var recommandVM : RecommandViewModel = RecommandViewModel()
 
     private lazy var collectionView:UICollectionView = {[unowned  self]in
         let layout = UICollectionViewFlowLayout()
@@ -43,6 +44,9 @@ class RecommandViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         self.view.backgroundColor = UIColor.blue
+        recommandVM.requestData{[weak self]in
+           self?.collectionView.reloadData()
+        }
     }
 }
 
@@ -55,26 +59,29 @@ extension RecommandViewController{
 extension RecommandViewController:UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommandVM.allRoomGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if(section == 0){
-            return 8
-        }
-        return 4
+        return recommandVM.allRoomGroups[section].roomList?.count ?? 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let room = recommandVM.allRoomGroups[indexPath.section].roomList![indexPath.item]
         if indexPath.section == 1{
-            return collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellId, for: indexPath)
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellId, for: indexPath) as! CollectionPrettyCell
+            cell.reloadCell(room: room)
+            return cell
         }
-            return  collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellId, for: indexPath)
-       
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellId, for: indexPath) as! CollectionNormalCell
+            cell.reloadCell(room: room)
+          return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewId, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewId, for: indexPath) as! CollectionHeaderView
+        let roomGroup = recommandVM.allRoomGroups[indexPath.section]
+        headerView.reloadHeader(roomGroup: roomGroup)
         return headerView
     }
     
