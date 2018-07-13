@@ -12,6 +12,7 @@ private let kItemW = (KScreenW - 3*kItemMagin)/2
 private let kItemH = kItemW*3/4
 private let kPrettryItemH = kItemW*4/3
 private let kHeaderViewH :CGFloat = 50
+private let kCycleViewH :CGFloat = kScreenH*1/5
 private let kNormalCellId = "kNormalCellId"
 private let kPrettyCellId = "kPrettyCellId"
 private let kHeaderViewId = "kHeaderViewId"
@@ -38,21 +39,41 @@ class RecommandViewController: UIViewController {
         collectionView.register(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellId)
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewId)
         
+        //设置内边距 适应无限轮播
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        
+        print("内边距:\(collectionView.contentInset.top) 轮播高：\(kCycleViewH)")
         return collectionView
     }()
+    
+    private lazy var cycleView :RecommandCycleView = {
+        let cycleView = RecommandCycleView.create()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: KScreenW, height: kCycleViewH)
+        return cycleView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        self.view.backgroundColor = UIColor.blue
-        recommandVM.requestData{[weak self]in
-           self?.collectionView.reloadData()
-        }
+        
     }
 }
 
 extension RecommandViewController{
     private func setupUI(){
         view.addSubview(collectionView)
+        
+        reloadCollectionView()
+
+    }
+    
+    private func reloadCollectionView(){
+        collectionView.addSubview(cycleView)
+        
+        //self.view.backgroundColor = UIColor.blue
+        recommandVM.requestData{[weak self]in
+            self?.collectionView.reloadData()
+        }
     }
 }
 

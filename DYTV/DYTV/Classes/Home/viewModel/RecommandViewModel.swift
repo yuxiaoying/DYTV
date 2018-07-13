@@ -11,11 +11,14 @@ import HandyJSON
 
 class RecommandViewModel{
     var allRoomGroups = [RoomGroupVo]()
+    
+    var allCycleVos = [CycleVo]()
 }
 
 
 //发送网络请求
 extension RecommandViewModel{
+    //请求推荐房间组
     func requestData(finishedCallBack:@escaping ()->()){
         allRoomGroups.removeAll()
         var hotRooms = [RoomVo]()
@@ -113,4 +116,29 @@ extension RecommandViewModel{
         
         
     }
+
+    func requestCycleData(finishedCallBack:@escaping ()->()){
+        let dGroup = DispatchGroup()
+        
+        dGroup.enter()
+        NetworkTool.request(urlString: "http://www.douyutv.com/api/v1/slide/6?version=2.300", method: MethodType.GET) { responseStr in
+            if let jsonResponse = JSONDeserializer<CycleJson>.deserializeFrom(json: responseStr){
+                guard let cycleVos = jsonResponse.data else{return}
+                for cycleVo in cycleVos{
+                    self.allCycleVos.append(cycleVo)
+                }
+                dGroup.leave()
+            }
+            
+            dGroup.notify(queue: DispatchQueue.main){
+                finishedCallBack()
+            }
+        }
+        
+        
+    }
 }
+
+
+
+
